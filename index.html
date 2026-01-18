@@ -519,7 +519,7 @@ function formatBlocks(items, cfg){
 function formatSimpleList(items, cfg){
   const lines = [];
   lines.push(makeHeaderTitle(cfg.dateStr, cfg.groupType, cfg.emojiTitle).trimEnd());
-  lines.push(""); // ✅ 이게 진짜 빈 줄 1줄
+
   for (const it of items) {
     const leadEmoji =
 	  (cfg.groupType === "섬김") ? (cfg.emojiServe || "🤝") :
@@ -746,4 +746,5 @@ getEl("copyBtn").onclick = copyText;
 <footer style=" position: fixed; right: 8px; bottom: 6px; font-size: 11px; color: #999; "> © 2026 Onsfamily </footer>
 </body>
 </html>
+
 
